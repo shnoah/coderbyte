@@ -9,7 +9,6 @@ def FirstFactorial(num)
   
   num=i
   
-  # code goes here
   return num 
          
 end
