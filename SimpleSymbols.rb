@@ -1,27 +1,28 @@
 def SimpleSymbols(str)
 
-  
-  i=0
-  cnt=0
-  cnt2=0
-  while i<=str.length
+
+ i=0
+ cnt=0
+ cnt2=0
+
+ while i<=str.length
     if str[i]=="+"
         cnt+=1
     end
-	i++
-	end
+  i++
+end
   
-  str=str.gsub(/[abcdefghijklmnopqrstuvwxyz]/, '+')     
-  i=0
+str=str.gsub(/[abcdefghijklmnopqrstuvwxyz]/, 'a')     
+i=0
   
-  while i<str.length
-    if str[i]=="="
+while i<str.length
+   if str[i]=="a"
       cnt2+=1
     end
-    i++
-    end
+  i++
+end
   
-  if cnt==cnt2 
+  if cnt==cnt2*2 
     str="true"
   else
     str="false"
