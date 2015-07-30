@@ -1,8 +1,13 @@
 def ABCheck(str)
 
+flag=0
 
+if str.index('b') == nil #b가 없는 경우 무조건 false
+        flag=1
+        str="false"
+    end  
 
-    if str.index('b')-str.index('a') == 4
+    if str.index('b')-str.index('a') == 4 && flag==0
       str ="true"
     else
       str[str.index('a')]="x"
