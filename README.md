@@ -1,2 +1,2 @@
 # coderbyte
-coderbyte with ROR, Likelion skku
+coderbyte with Ruby - Likelion SKKU
